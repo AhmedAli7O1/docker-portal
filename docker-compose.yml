@@ -2,10 +2,10 @@ version: '3'
 services:
   docker-portal:
     build: .
+    args:
+      - MONGO_SERVER="mongo.docker-portal.net"
     ports:
-     - "5000:5000"
-    volumes:
-     - .:/code
+      - "7000:7000"
     networks:
       docker-portal-net:
         aliases:
@@ -17,6 +17,13 @@ services:
       docker-portal-net:
         aliases:
           - mongo.docker-portal.net
+    volumes:
+      - dportal-mongo-data:/data/db
+      - dportal-mongo-config:/data/configdb
 
 networks:
   docker-portal-net:
+
+volumes:
+  dportal-mongo-data:
+  dportal-mongo-config:
