@@ -1,0 +1,24 @@
+{
+  "name": "docker-portal",
+  "version": "0.0.1",
+  "description": "![build-status](https://travis-ci.org/AhmedAli7O1/docker-portal.svg?branch=master)",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./api/index.js",
+    "build": "node ./tools/copy_ui.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedAli7O1/docker-portal.git"
+  },
+  "author": "Ahmed Ali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AhmedAli7O1/docker-portal/issues"
+  },
+  "homepage": "https://github.com/AhmedAli7O1/docker-portal#readme"
+}

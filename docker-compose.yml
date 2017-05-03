@@ -1,0 +1,22 @@
+version: '3'
+services:
+  docker-portal:
+    build: .
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+    networks:
+      docker-portal-net:
+        aliases:
+          - web.docker-portal.net
+
+  portal-mongo:
+    image: "mongo:3.0"
+    networks:
+      docker-portal-net:
+        aliases:
+          - mongo.docker-portal.net
+
+networks:
+  docker-portal-net:

@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "blacklist": [
+      "pluginName"
+    ]
+  },
+  "options": {
+    "MongoDB": false
+  }
+}
