@@ -1,0 +1,16 @@
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libxml2-dev
+
+services:
+  - mongodb
+
+language: node_js
+node_js:
+  - "6"
+
+env:
+  - APP_DIR=ui
+  - APP_DIR=api
+
+script: cd $APP_DIR && npm install && npm test
