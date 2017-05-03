@@ -1,0 +1,29 @@
+{
+  "name": "docker-portal-api",
+  "version": "0.0.2",
+  "description": "api for docker-portal, the real-time docker cluster manager.",
+  "author": "Ahmed Ali",
+  "dependencies": {
+    "good": "^7.1.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.1.1",
+    "hapi-arch": "^1.0.18",
+    "hapi-swagger": "^7.7.0",
+    "inert": "^4.2.0",
+    "mongoose": "^4.9.7",
+    "vision": "^4.1.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedAli7O1/docker-portal-api.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AhmedAli7O1/docker-portal-api/issues"
+  },
+  "homepage": "https://github.com/AhmedAli7O1/docker-portal-api#readme"
+}
