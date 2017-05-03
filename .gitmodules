@@ -1,0 +1,6 @@
+[submodule "docker-portal-api"]
+	path = docker-portal-api
+	url = https://github.com/AhmedAli7O1/docker-portal-api
+[submodule "docker-portal-ui"]
+	path = docker-portal-ui
+	url = https://github.com/AhmedAli7O1/docker-portal-ui
