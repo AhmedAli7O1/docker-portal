@@ -1,4 +1,7 @@
 # docker-portal
+
+![build-status](https://travis-ci.org/AhmedAli7O1/docker-portal.svg?branch=master)
+
 real-time docker cluster manager.
 
 ## Links
